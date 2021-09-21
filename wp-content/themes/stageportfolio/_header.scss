@@ -1,0 +1,49 @@
+#navbar {
+  overflow: hidden;
+  background: $navbar-bg;
+  box-shadow: 0 1px  ;
+  ul {
+    margin: 0px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  ul li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  ul li a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+
+  ul li a:hover::after {
+    width: 100%;
+  }
+
+  ul li a.active {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    color: grey;
+  }
+  .logo-image{
+    width: 60px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+}
