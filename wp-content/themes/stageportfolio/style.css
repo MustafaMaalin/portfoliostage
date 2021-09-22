@@ -1,30 +1,25 @@
 @import "https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";
 .navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 120px;
-  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
 }
 .navbar ul {
-  float: right;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  top: 20px;
-  right: 0;
-  position: absolute;
-  margin-right: 200px;
-  font-family: "Roboto", sans-serif;
 }
-.navbar ul li a {
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 10px;
+.navbar li {
+  list-style-type: none;
+}
+.navbar li a {
   text-decoration: none;
-  font-size: 20px;
-  margin-right: 20px;
+  color: white;
+  padding: 1rem;
+  display: block;
 }
 .navbar ul li a::after {
   content: "";
@@ -37,21 +32,53 @@
 .navbar ul li a:hover::after {
   width: 100%;
 }
-.navbar ul li a.active {
-  opacity: 0.5;
+.navbar .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
-.navbar .logo-image {
-  width: 75px;
-  margin-top: 10px;
+.navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.logo-image {
+  width: 40px;
   height: auto;
-  margin-left: 200px;
+  margin-left: 40px;
 }
+
+ul li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin-top: 0 !important;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 body h1 {
   font-family: "Verdana";
@@ -64,41 +91,38 @@ body p {
   margin-top: 120px !important;
 }
 
-@media screen and (min-width: 600px) and (max-width: 959px) {
-  .navbar {
-    background-color: grey;
-  }
-  .navbar .logo-container {
-    float: left;
-  }
-  .navbar .menu-container {
-    float: left;
-    clear: left;
-  }
-}
 @media screen and (max-width: 599px) {
-  .navbar a:not(:first-child) {
-    display: none;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .navbar icon {
-    float: right;
+  .navbar .toggle-button {
+    display: flex;
+    margin-top: 30px;
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .menu-container {
+    display: none;
+    width: 100%;
+  }
+  .menu-container.active {
     display: block;
   }
-  .navbar .responsive {
-    position: relative;
+  .menu-container ul {
+    width: 100%;
+    flex-direction: column;
   }
-  .navbar .responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .menu-container li {
+    text-align: center;
   }
-  .navbar .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .menu-container li a {
+    padding: 0.5rem 1rem;
   }
-  .navbar .logo {
-    display: none;
+  .menu-container active {
+    display: flex;
   }
 }
 /*

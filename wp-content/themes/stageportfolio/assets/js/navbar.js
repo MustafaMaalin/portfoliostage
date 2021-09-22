@@ -1,8 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("navbarId");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLink = document.getElementsByClassName('menu-container')[0];
+
+toggleButton.addEventListener('click', function(e){
+    e.preventDefault();
+    navbarLink.classList.toggle('active');
+})
