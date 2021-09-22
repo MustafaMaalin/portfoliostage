@@ -1,10 +1,98 @@
-@import "variables";
-@import "header";
+@import "assets/scss/variables";
+@import "assets/scss/header";
+@import "assets/scss/media-queries";
+@import "https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";
 
-body{
+html {
+  margin-top: 0 !important;
+}
+
+body {
   margin: 0px;
 
+  h1 {
+    font-family: "Verdana";
+  }
+
+  p {
+    font-family: Roboto;
+  }
 }
+
+.content {
+  margin-top: 120px !important;
+}
+
+
+//desktop
+
+
+//tablet
+@include sm() {
+  .navbar {
+    background-color: grey;
+
+    .logo-container {
+      float: left;
+    }
+
+    .menu-container {
+      float: left;
+      clear: left;
+    }
+  }
+}
+
+//mobile
+@include xs() {
+  .navbar {
+    a:not(:first-child) {
+      display: none;
+    }
+
+    icon {
+      float: right;
+      display: block;
+    }
+    .responsive {
+      position: relative;
+    }
+    .responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .logo{
+      display: none;
+    }
+  }
+  //p {
+  //  text-align: center;
+  //}
+  //
+  //.navbar {
+  //  background-color: grey;
+  //
+  //  li {
+  //    display: none;
+  //  }
+  //
+  //  a {
+  //
+  //    position: relative;
+  //    left: -50;
+  //  }
+  //
+  //}
+
+}
+
+
 /*
 Theme Name: stageportfolio
 Text Domain: stageportfolio

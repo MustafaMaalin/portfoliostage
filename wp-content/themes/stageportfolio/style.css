@@ -1,16 +1,23 @@
-#navbar {
-  overflow: hidden;
+@import "https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 120px;
   background: white;
-  box-shadow: 0 1px;
 }
-#navbar ul {
-  margin: 0px;
+.navbar ul {
   float: right;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  top: 20px;
+  right: 0;
+  position: absolute;
+  margin-right: 200px;
+  font-family: "Roboto", sans-serif;
 }
-#navbar ul li a {
+.navbar ul li a {
   display: block;
   color: #000000;
   text-align: center;
@@ -19,7 +26,7 @@
   font-size: 20px;
   margin-right: 20px;
 }
-#navbar ul li a::after {
+.navbar ul li a::after {
   content: "";
   width: 0px;
   height: 1px;
@@ -27,27 +34,73 @@
   background: black;
   transition: 300ms;
 }
-#navbar ul li a:hover::after {
+.navbar ul li a:hover::after {
   width: 100%;
 }
-#navbar ul li a.active {
-  content: "";
-  width: 0px;
-  height: 1px;
-  display: block;
-  color: grey;
+.navbar ul li a.active {
+  opacity: 0.5;
 }
-#navbar .logo-image {
-  width: 60px;
+.navbar .logo-image {
+  width: 75px;
+  margin-top: 10px;
   height: auto;
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-left: 200px;
+}
+html {
+  margin-top: 0 !important;
 }
 
 body {
   margin: 0px;
 }
+body h1 {
+  font-family: "Verdana";
+}
+body p {
+  font-family: Roboto;
+}
 
+.content {
+  margin-top: 120px !important;
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .navbar {
+    background-color: grey;
+  }
+  .navbar .logo-container {
+    float: left;
+  }
+  .navbar .menu-container {
+    float: left;
+    clear: left;
+  }
+}
+@media screen and (max-width: 599px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar icon {
+    float: right;
+    display: block;
+  }
+  .navbar .responsive {
+    position: relative;
+  }
+  .navbar .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar .logo {
+    display: none;
+  }
+}
 /*
 Theme Name: stageportfolio
 Text Domain: stageportfolio
