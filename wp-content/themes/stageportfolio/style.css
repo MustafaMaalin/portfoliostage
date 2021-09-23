@@ -3,21 +3,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: white;
+  padding: 30px;
 }
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
+  font-size: 20px;
+  font-family: "Verdana", sans-serif;
 }
 .navbar li {
   list-style-type: none;
 }
 .navbar li a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 1rem;
   display: block;
 }
@@ -45,7 +46,7 @@
 .navbar .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -68,6 +69,37 @@ ul li a:hover::after {
   width: 100%;
 }
 
+.title_homepage h1 {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 203px;
+  margin-top: 250px;
+}
+.title_homepage line-animation::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+.title_homepage line-animation:hover::after {
+  width: 100%;
+}
+
+.img_fluid {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  top: 200px;
+}
+
+.content {
+  display: flex;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -79,9 +111,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-body h1 {
-  font-family: "Verdana";
 }
 body p {
   font-family: Roboto;

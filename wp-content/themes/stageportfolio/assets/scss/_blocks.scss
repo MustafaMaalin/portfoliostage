@@ -1,0 +1,37 @@
+.title_homepage{
+  h1 {
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 203px;
+    margin-top: 250px;
+  }
+
+  line-animation::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+
+  line-animation:hover::after {
+    width: 100%;
+  }
+}
+
+.img_fluid{
+  width: 500px;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  top: 200px;
+}
+
+.content{
+
+  display: flex;
+
+
+}
