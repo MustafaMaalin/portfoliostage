@@ -17,7 +17,6 @@ body {
   padding: 0;
 
 
-
   p {
     font-family: Roboto;
   }
@@ -28,10 +27,15 @@ body {
 }
 
 @include xs() {
-  .navbar {
+  .menu-open {
+    background-color: rgba(0, 0, 0, 0.3)
 
+  }
+  .navbar {
+    z-index: 9999;
     flex-direction: column;
     align-items: flex-start;
+
     .toggle-button {
       display: flex;
       margin-top: 30px;
@@ -41,10 +45,13 @@ body {
     }
   }
   .menu-container {
+    z-index: 9999;
+    background-color: white;
     display: none;
     width: 100%;
-    &.active{
-      display:block;
+
+    &.active {
+      display: block;
     }
 
     ul {
@@ -58,15 +65,34 @@ body {
       a {
         padding: .5rem 1rem;
       }
-
-    }
-    active{
-      display: flex;
     }
   }
 
-}
+  .container {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
 
+    .titel {
+      font-size: 25px;
+      font-family: Verdana;
+      margin-left: 45px;
+      margin-top: 20px;
+    }
+
+    .img_fluid {
+      width: 250px;
+      height: auto;
+      position: relative;
+      right: 0;
+      left: 30px;
+      top: 0;
+    }
+
+  }
+
+
+}
 
 
 //desktop

@@ -9,20 +9,20 @@ get_header();
 ?>
 </div>
 
-<div class="flex-container" >
+<div class="container" >
     <div class="title_homepage">
-        <h1 class="line-animation">
+        <h1 class="titel">
             <?php
             the_field('page_title');
             ?>
         </h1>
     </div>
-<div class="img-flex" >
-    <img src="<?php echo $picture; ?>" class="img_fluid">
-</div>
+    <div class="img-home" >
+        <img src="<?php echo $picture; ?>" class="img_fluid">
+    </div>
 </div>
 
-<div class="footer">
+<div id="footer">
     <?php
     get_footer();
     ?>

@@ -12,9 +12,9 @@
     <nav class="navbar" id="navbarId">
             <div class="logo-container"><a class="logo" target="_blank" href="https://google.nl"> <img class="logo-image" src="<?php echo get_template_directory_uri()."/assets/images/mustafa-logo.png";?>"> </a></div>
         <a href="#" class='toggle-button'>
-            <span class="bar" ></span>
-            <span class="bar" ></span>
-            <span class="bar" ></span>
+            <div class="bar bar-1" ></div>
+            <div class="bar bar-2" ></div>
+            <div class="bar bar-3" ></div>
         </a>
         <div class="menu-container">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary' ) ); ?>
