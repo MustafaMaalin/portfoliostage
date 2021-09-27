@@ -1,4 +1,5 @@
-.title_homepage{
+.container{
+.title_homepage {
   h1 {
     font-family: "Roboto";
     font-size: 50px;
@@ -21,7 +22,7 @@
   }
 }
 
-.img_fluid{
+.img_fluid {
   width: 500px;
   height: auto;
   position: absolute;
@@ -29,9 +30,40 @@
   top: 200px;
 }
 
-.content{
-
-  display: flex;
-
-
+.welkomteksten {
+  font-size: 20px;
+  width: 600px;
+  margin-left: 208px;
 }
+}
+
+
+
+
+.stagecontainer {
+  padding-bottom: 100px;
+  .stagetitel {
+    h1 {
+      font-family: "Roboto";
+      font-size: 50px;
+      font-weight: bold;
+      margin-left: 203px;
+      margin-top: 400px;
+    }
+  }
+  .stageteksten {
+    font-size: 20px;
+    width: 600px;
+    margin-left: 208px;
+  }
+
+  .img-stage {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 950px;
+  }
+}
+
+
