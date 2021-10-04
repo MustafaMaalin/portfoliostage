@@ -4,13 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://mustafamaalin.nl">
+    <link rel="stylesheet" href="./assets/scss/fontawesome/css/fontawesome.css"
     <?php wp_head(); ?>
 
 </head>
 <header>
     <body>
     <nav class="navbar" id="navbarId">
-            <div class="logo-container"><a class="logo" target="_blank" href="https://google.nl"> <img class="logo-image" src="<?php echo get_template_directory_uri()."/assets/images/mustafa-logo.png";?>"> </a></div>
+            <div class="logo-container"><a class="logo" href="#"> <img class="logo-image" src="<?php echo get_template_directory_uri()."/assets/images/mustafa-logo.png";?>"> </a></div>
         <a href="#" class='toggle-button'>
             <div class="bar bar-1" ></div>
             <div class="bar bar-2" ></div>

@@ -1,0 +1,27 @@
+.portfolio-items {
+  .list-group {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-evenly;
+
+    .list-group-item {
+      list-style-type: none;
+      .items {
+        @extend %fa-icon;
+        @extend .fa-solid;
+        width: 200px;
+        height: auto;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: $font-h1;
+        }
+      :hover{
+        opacity: 0.5;
+      }
+        content: fa-content($fa-var-user);
+      }
+    }
+  }
+}

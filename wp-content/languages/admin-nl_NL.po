@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-12 09:09:41+0000\n"
+"PO-Revision-Date: 2021-10-03 11:55:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -573,18 +573,18 @@ msgstr "HTTPS wordt al ondersteund voor je site."
 #. Settings > General > Site Address.
 #: wp-admin/includes/class-wp-site-health.php:1585
 msgid "Your <a href=\"%1$s\">WordPress Address</a> and <a href=\"%2$s\">Site Address</a> are not set up to use HTTPS."
-msgstr "Je <a href=\"%1$s\">WordPress adres</a> en <a href=\"%2$s\">siteadres</a> zijn niet ingesteld om HTTPS te gebruiken."
+msgstr "Je <a href=\"%1$s\">WordPress adres</a> en <a href=\"%2$s\">Site adres</a> zijn niet ingesteld om HTTPS te gebruiken."
 
 #. translators: 1: URL to Settings > General > WordPress Address, 2: URL to
 #. Settings > General > Site Address.
 #: wp-admin/includes/class-wp-site-health.php:1575
 msgid "You are accessing this website using HTTPS, but your <a href=\"%1$s\">WordPress Address</a> and <a href=\"%2$s\">Site Address</a> are not set up to use HTTPS by default."
-msgstr "Je opent deze site via HTTPS, maar je <a href=\"%1$s\">WordPress adres</a> en <a href=\"%2$s\">siteadres</a> zijn niet standaard ingesteld om HTTPS te gebruiken."
+msgstr "Je opent deze site via HTTPS, maar je <a href=\"%1$s\">WordPress adres</a> en <a href=\"%2$s\">Site adres</a> zijn niet standaard ingesteld om HTTPS te gebruiken."
 
 #. translators: %s: URL to Settings > General > Site Address.
 #: wp-admin/includes/class-wp-site-health.php:1564
 msgid "Your <a href=\"%s\">Site Address</a> is not set up to use HTTPS."
-msgstr "Je <a href=\"%s\">siteadres</a> is niet ingesteld om HTTPS te gebruiken."
+msgstr "Je <a href=\"%s\">Site adres</a> is niet ingesteld om HTTPS te gebruiken."
 
 #: wp-admin/includes/class-wp-site-health.php:1456
 msgid "Learn more about debugging in WordPress."
@@ -2149,15 +2149,15 @@ msgstr "<a href=\"https://wordpress.org/support/article/settings-media-screen/\"
 
 #: wp-admin/widgets-form.php:71
 msgid "<a href=\"https://wordpress.org/support/article/appearance-widgets-screen/\">Documentation on Widgets</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/appearance-widgets-screen/\">Documentatie over Widgets</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/appearance-widgets-screen/\">Documentatie over widgets</a>"
 
 #: wp-admin/import.php:31
 msgid "<a href=\"https://wordpress.org/support/article/tools-import-screen/\">Documentation on Import</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/tools-import-screen/\">Documentatie over Importeren</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/tools-import-screen/\">Documentatie over importeren</a>"
 
 #: wp-admin/tools.php:55
 msgid "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentation on Tools</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentatie over Gereedschap</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentatie over gereedschap</a>"
 
 #: wp-admin/options.php:351
 msgid "This page allows direct access to your site settings. You can break things here. Please be cautious!"
@@ -2174,19 +2174,19 @@ msgstr "<strong>Bericht format</strong> - Dit geeft aan hoe je thema getoond wor
 
 #: wp-admin/edit-form-advanced.php:337
 msgid "<a href=\"https://wordpress.org/support/article/pages-screen/\">Documentation on Editing Pages</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/pages-screen/\">Documentatie over het bewerken van Pagina's</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/pages-screen/\">Documentatie over het bewerken van pagina's</a>"
 
 #: wp-admin/edit-form-advanced.php:336
 msgid "<a href=\"https://wordpress.org/support/article/pages-add-new-screen/\">Documentation on Adding New Pages</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/pages-add-new-screen/\">Documentatie over het toevoegen van nieuwe Pagina's</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/pages-add-new-screen/\">Documentatie over het toevoegen van nieuwe pagina's</a>"
 
 #: wp-admin/edit-form-advanced.php:319
 msgid "<a href=\"https://wordpress.org/support/article/wordpress-editor/\">Documentation on Writing and Editing Posts</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/wordpress-editor/\">Documentatie over het schrijven en bewerken van Berichten</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/wordpress-editor/\">Documentatie over het schrijven en bewerken van berichten</a>"
 
 #: wp-admin/upload.php:75 wp-admin/upload.php:254
 msgid "<a href=\"https://wordpress.org/support/article/media-library-screen/\">Documentation on Media Library</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/media-library-screen/\">Documentatie over de Mediabibliotheek</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/media-library-screen/\">Documentatie over de mediabibliotheek</a>"
 
 #: wp-admin/revision.php:156
 msgid "<a href=\"https://wordpress.org/support/article/revisions/\">Revisions Management</a>"
@@ -2194,7 +2194,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/revisions/\">Revisie Man
 
 #: wp-admin/edit-form-advanced.php:355 wp-admin/media.php:96
 msgid "<a href=\"https://wordpress.org/support/article/edit-media/\">Documentation on Edit Media</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/edit-media/\">Documentatie over het bewerken van Media</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/edit-media/\">Documentatie over het bewerken van media</a>"
 
 #: wp-admin/edit-comments.php:196
 msgid "<a href=\"https://wordpress.org/support/article/keyboard-shortcuts/\">Documentation on Keyboard Shortcuts</a>"
@@ -2214,7 +2214,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/dashboard-screen/\">Docu
 
 #: wp-admin/user-new.php:294
 msgid "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">Documentation on Adding New Users</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">Documentatie over het toevoegen van nieuwe Gebruikers</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">Documentatie over het toevoegen van nieuwe gebruikers</a>"
 
 #. translators: %s: URL to Site Health Status page.
 #: wp-admin/site-health-info.php:43
@@ -2227,7 +2227,7 @@ msgstr "Resultaten worden nog geladen&hellip;"
 
 #: wp-admin/options-permalink.php:413
 msgid "<a href=\"https://wordpress.org/support/article/nginx/\">Documentation on Nginx configuration</a>."
-msgstr "<a href=\"https://wordpress.org/support/article/nginx/\">Documentatie over Nginx configuraties</a>."
+msgstr "<a href=\"https://wordpress.org/support/article/nginx/\">Documentatie over Nginx configuratie</a>."
 
 #: wp-admin/options-permalink.php:212
 msgid "https://wordpress.org/support/article/using-permalinks/"
@@ -2235,11 +2235,11 @@ msgstr "https://wordpress.org/support/article/using-permalinks/"
 
 #: wp-admin/options-permalink.php:61
 msgid "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentation on Using Permalinks</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentatie over het gebruik van Permalinks</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentatie over het gebruik van permalinks</a>"
 
 #: wp-admin/options-permalink.php:60
 msgid "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Documentation on Permalinks Settings</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Documentatie over Permalinks instellingen</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Documentatie over permalinks instellingen</a>"
 
 #: wp-admin/update-core.php:1006
 msgid "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen/\">Documentation on Updating WordPress</a>"
@@ -2247,7 +2247,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen
 
 #: wp-admin/nav-menus.php:663
 msgid "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation on Menus</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentatie over Menu's</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentatie over menu's</a>"
 
 #: wp-admin/plugin-editor.php:143
 msgid "<a href=\"https://developer.wordpress.org/plugins/\">Documentation on Writing Plugins</a>"
@@ -2263,7 +2263,7 @@ msgstr "<a href=\"https://developer.wordpress.org/themes/basics/template-tags/\"
 
 #: wp-admin/theme-editor.php:53
 msgid "<a href=\"https://wordpress.org/support/article/editing-files/\">Documentation on Editing Files</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/editing-files/\">Documentation on bewerken van bestanden</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/editing-files/\">Documentatie over het bewerken van bestanden</a>"
 
 #: wp-admin/theme-editor.php:52 wp-admin/themes.php:206
 msgid "<a href=\"https://wordpress.org/support/article/using-themes/\">Documentation on Using Themes</a>"
@@ -2275,7 +2275,7 @@ msgstr "<a href=\"https://developer.wordpress.org/themes/\">Documentatie over th
 
 #: wp-admin/comment.php:70 wp-admin/edit-comments.php:194
 msgid "<a href=\"https://wordpress.org/support/article/comments-screen/\">Documentation on Comments</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/comments-screen/\">Documentatie over Reacties</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/comments-screen/\">Documentatie over reacties</a>"
 
 #: wp-admin/options-general.php:377
 msgid "<a href=\"https://wordpress.org/support/article/formatting-date-and-time/\">Documentation on date and time formatting</a>."
@@ -2499,11 +2499,11 @@ msgstr "<a href=\"https://wordpress.org/support/article/settings-writing-screen/
 
 #: wp-admin/edit-tags.php:311
 msgid "<a href=\"https://wordpress.org/support/article/posts-tags-screen/\">Documentation on Tags</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/posts-tags-screen/\">Documentatie over Tags</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/posts-tags-screen/\">Documentatie over tags</a>"
 
 #: wp-admin/edit-tags.php:307
 msgid "<a href=\"https://wordpress.org/support/article/posts-categories-screen/\">Documentation on Categories</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/posts-categories-screen/\">Documentatie over Categorieën</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/posts-categories-screen/\">Documentatie over categorieën</a>"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/options-reading.php:170
@@ -4708,7 +4708,7 @@ msgstr "Welke persoonlijke gegevens we verzamelen en waarom we die verzamelen"
 #. translators: Default privacy policy text. %s: Site URL.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:468
 msgid "Our website address is: %s."
-msgstr "Ons site-adres is: %s."
+msgstr "Ons site adres is: %s."
 
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:465
@@ -5779,7 +5779,7 @@ msgstr "Berichten van LiveJournal importeren met behulp van hun API."
 
 #: wp-admin/includes/import.php:197
 msgid "Convert existing categories to tags or tags to categories, selectively."
-msgstr "Bestaande categorie&euml;n omzetten naar tags, of bestaande tags naar categorie&euml;n."
+msgstr "Selectief, bestaande categorieën naar tags of tags naar categorieën converteren."
 
 #: wp-admin/includes/import.php:191
 msgid "Import posts, comments, and users from a Blogger blog."
@@ -7174,7 +7174,7 @@ msgstr "Sessies"
 
 #: wp-admin/user-edit.php:643
 msgid "Cancel password change"
-msgstr "Wachtwoordaanpassingen annuleren"
+msgstr "Wachtwoordwijziging annuleren"
 
 #: wp-admin/user-new.php:563
 msgid "Generate password"
@@ -7306,7 +7306,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Links_Screen\">Documentatie over h
 
 #: wp-admin/includes/class-custom-image-header.php:136
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\">Documentation on Custom Header</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\">Documentatie over aangepaste kopafbeeldingen</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\">Documentatie over aangepaste header</a>"
 
 #: wp-admin/my-sites.php:51
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_My_Sites_Screen\">Documentation on My Sites</a>"
@@ -8013,7 +8013,7 @@ msgstr "<strong>In een oogopslag</strong> &mdash; Toont een samenvatting van de 
 
 #: wp-admin/index.php:63
 msgid "<strong>Box Controls</strong> &mdash; Click the title bar of the box to expand or collapse it. Some boxes added by plugins may have configurable content, and will show a &#8220;Configure&#8221; link in the title bar if you hover over it."
-msgstr "<strong>Boxopties</strong> - Klik op de titelbalk van een box om deze in- of uit te vouwen. Sommige (door plugins) toegevoegde boxen hebben instelbare inhoud, deze kun je aanpassen door in de titel van de box boven de titel te hoveren en op &#8220;Configureren&#8221; te klikken."
+msgstr "<strong>Box opties</strong> &mdash; Klik op de titelbalk van een box om deze in- of uit te vouwen. Sommige (door plugins) toegevoegde boxen hebben instelbare inhoud, deze kun je aanpassen door in de titel van de box boven de titel te hoveren en op &#8220;Configureren&#8221; te klikken."
 
 #: wp-admin/themes.php:43
 msgid "Sorry, you are not allowed to resume this theme."
@@ -8261,7 +8261,7 @@ msgstr "Niet mogelijk om dit formulier te versturen. Vernieuw het scherm en prob
 
 #: wp-admin/index.php:90
 msgid "<strong>Quick Draft</strong> &mdash; Allows you to create a new post and save it as a draft. Also displays links to the 3 most recent draft posts you've started."
-msgstr "<strong>Snel concept</strong> &mdash; Hiermee kan je een nieuw bericht maken en deze opslaan als concept. Ook toont het een overzicht van de 3 meest recente concepten die je gestart bent."
+msgstr "<strong>Snel een concept maken</strong> &mdash; Hiermee kan je een nieuw bericht maken en deze opslaan als concept. Ook toont het een overzicht van de 3 meest recente concepten die je gestart bent."
 
 #: wp-admin/index.php:87
 msgid "<strong>Activity</strong> &mdash; Shows the upcoming scheduled posts, recently published posts, and the most recent comments on your posts and allows you to moderate them."
@@ -8297,7 +8297,7 @@ msgstr "Binnenkort publiceren"
 
 #: wp-admin/includes/dashboard.php:577
 msgid "What&#8217;s on your mind?"
-msgstr "Wat houdt je bezig?"
+msgstr "Waar denk je aan?"
 
 #. translators: 1: Version number, 2: Theme name.
 #: wp-admin/includes/update.php:354
@@ -8306,7 +8306,7 @@ msgstr "WordPress %1$s gebruikt thema: %2$s."
 
 #: wp-admin/includes/dashboard.php:81
 msgid "Quick Draft"
-msgstr "Eenvoudig een concept maken"
+msgstr "Snel een concept maken"
 
 #: wp-admin/includes/dashboard.php:76
 msgid "Activity"
@@ -9396,7 +9396,7 @@ msgstr "Reactie selecteren"
 #. translators: %s: URL to Categories to Tags Converter tool.
 #: wp-admin/edit-tags.php:647
 msgid "Tags can be selectively converted to categories using the <a href=\"%s\">tag to category converter</a>."
-msgstr "Tags kunnen selectief geconverteerd worden naar categorie&#235;n met behulp van <a href=\"%s\">tag naar categorie verplaatsen</a>."
+msgstr "Tags kunnen selectief geconverteerd worden naar categorieën met behulp van de <a href=\"%s\">tag naar categorie converter</a>."
 
 #: wp-admin/edit-tags.php:260
 msgid "You can delete Link Categories in the Bulk Action pull-down, but that action does not delete the links within the category. Instead, it moves them to the default Link Category."
@@ -9492,7 +9492,7 @@ msgstr "Categorie&#235;n hebben een hi&#235;rarchie, wat betekent dat ze onderge
 #. translators: %s: URL to General Settings screen.
 #: wp-admin/includes/class-custom-image-header.php:125
 msgid "For most themes, the header text is your Site Title and Tagline, as defined in the <a href=\"%s\">General Settings</a> section."
-msgstr "Voor de meeste thema's bestaat de headertekst uit je site titel en site slogan zoals ingesteld in de <a href=\"%s\">Algemene instellingen</a> sectie."
+msgstr "Voor de meeste thema's bestaat de header tekst uit je site titel en site slogan zoals ingesteld in de <a href=\"%s\">Algemene instellingen</a> sectie."
 
 #: wp-admin/includes/class-custom-image-header.php:113
 msgid "If your theme has more than one default header image, or you have uploaded more than one custom header image, you have the option of having WordPress display a randomly different image on each page of your site. Click the &#8220;Random&#8221; radio button next to the Uploaded Images or Default Images section to enable this feature."
@@ -10171,7 +10171,7 @@ msgstr "Reacties modereren"
 #. translators: %s: URL to Import screen.
 #: wp-admin/tools.php:77
 msgid "If you want to convert your categories to tags (or vice versa), use the <a href=\"%s\">Categories and Tags Converter</a> available from the Import screen."
-msgstr "Als je de categorie&#235;n wilt converteren naar tags (of andersom), gebruik dan de <a href=\"%s\">Categorie&#235;n en Tags</a> converteermogelijkheid die beschikbaar is via het Importeerscherm."
+msgstr "Als je je categorieën naar tags wilt converteren (of andersom), gebruik dan de <a href=\"%s\">Categorieën en tags converter</a> beschikbaar vanuit het Import scherm."
 
 #: wp-admin/plugin-install.php:98
 msgid "Adding Plugins"
@@ -10504,7 +10504,7 @@ msgstr "<strong>Fout</strong>: Kon niet verbinden met de server, controleer of d
 
 #: wp-admin/index.php:62
 msgid "<strong>Drag and Drop</strong> &mdash; To rearrange the boxes, drag and drop by clicking on the title bar of the selected box and releasing when you see a gray dotted-line rectangle appear in the location you want to place the box."
-msgstr "<strong>Verslepen</strong> - Om de boxen te herschikken, versleep ze door te klikken op de titelbalk van de geselecteerde box. Wanneer je een grijze stippellijn ziet verschijnen op de plaats waar je de box wilt plaatsen kun je de muisknop loslaten."
+msgstr "<strong>Verslepen</strong> &mdash; Om de boxen te herschikken, versleep ze door te klikken op de titelbalk van de geselecteerde box. Wanneer je een grijze stippellijn ziet verschijnen op de plaats waar je de box wilt plaatsen kun je de muisknop loslaten."
 
 #: wp-admin/index.php:60
 msgid "You can use the following controls to arrange your Dashboard screen to suit your workflow. This is true on most other administration screens as well."
@@ -11423,7 +11423,7 @@ msgstr "Je kunt de maximale afmetingen voor afbeeldingen die ingevoegd kunnen wo
 
 #: wp-admin/options-general.php:27
 msgid "Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes."
-msgstr "De meeste thema&#39;s geven de titel van de site weer bovenin elke pagina, in de titelbalk van de browser, en als de identificatienaam voor samengevatte feeds. De ondertitel wordt ook weergegeven door vele thema&#39;s."
+msgstr "Bij de meeste thema's wordt de site titel bovenaan elke pagina weergegeven, in de titelbalk van de browser en als identificerende naam voor gesyndiceerde feeds. De slogan wordt ook weergegeven door veel thema's."
 
 #: wp-admin/edit-form-advanced.php:414
 msgid "<strong>Order</strong> &mdash; Pages are usually ordered alphabetically, but you can choose your own order by entering a number (1 for first, etc.) in this field."
@@ -11477,7 +11477,7 @@ msgstr "Je kunt links op je site tonen, normaal gesproken doe je dat middels <a 
 
 #: wp-admin/edit-tags.php:284
 msgid "<strong>Slug</strong> &mdash; The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
-msgstr "<strong>Slug</strong> - De &#8220;slug&#8221; is de URL-vriendelijke versie van de naam. Het bestaat gewoonlijk uit alleen kleine letters en bevat alleen letters, cijfers en koppeltekens."
+msgstr "<strong>Slug</strong> &mdash; De &#8220;slug&#8221; is de URL vriendelijke versie van de naam. Het bestaat gewoonlijk uit alleen kleine letters en bevat alleen letters, cijfers en koppeltekens."
 
 #. translators: %s: URL to Press This bookmarklet.
 #: wp-admin/edit-form-advanced.php:315
@@ -11655,11 +11655,11 @@ msgstr "Je kunt de weergave van dit scherm wijzigen met het Schermopties tabblad
 
 #: wp-admin/edit-tags.php:291
 msgid "<strong>Description</strong> &mdash; The description is not prominent by default; however, some themes may display it."
-msgstr "<strong>Beschrijving</strong> - De beschrijving wordt standaard niet gebruikt; er zijn echter thema's die dit wel doen."
+msgstr "<strong>Beschrijving</strong> &mdash; De beschrijving is standaard niet prominent aanwezig; sommige thema's kunnen deze echter wel weergeven."
 
 #: wp-admin/edit-tags.php:281
 msgid "<strong>Name</strong> &mdash; The name is how it appears on your site."
-msgstr "<strong>Naam</strong> - De naam zoals het wordt getoond op de site."
+msgstr "<strong>Naam</strong> &mdash; De naam zoals het verschijnt op je site."
 
 #: wp-admin/edit-tags.php:277
 msgid "When adding a new tag on this screen, you&#8217;ll fill in the following fields:"
@@ -11770,7 +11770,7 @@ msgstr "Dit thema ondersteund geen navigatie menu&#39;s of widgets."
 
 #: wp-admin/includes/import.php:196 wp-admin/tools.php:47 wp-admin/tools.php:72
 msgid "Categories and Tags Converter"
-msgstr "Categorieën en tags converteren"
+msgstr "Categorieën en tags converter"
 
 #: wp-admin/includes/nav-menu.php:512 wp-admin/includes/nav-menu.php:527
 msgid "Most Recent"
@@ -14965,7 +14965,7 @@ msgstr "Categorieën kunnen, in tegenstelling tot tags, een rangorde hebben. Je 
 
 #: wp-admin/edit-tag-form.php:149 wp-admin/edit-tags.php:457
 msgid "The name is how it appears on your site."
-msgstr "De naam zoals het getoond wordt op de site."
+msgstr "De naam is zoals het verschijnt op je site."
 
 #: wp-admin/edit-link-form.php:133
 msgid "This will be shown when someone hovers over the link in the blogroll, or optionally below the link."
@@ -15003,11 +15003,11 @@ msgstr "<a href=\"%s\">Links</a> / Link bewerken"
 
 #: wp-admin/edit-tag-form.php:206 wp-admin/edit-tags.php:515
 msgid "The description is not prominent by default; however, some themes may show it."
-msgstr "De beschrijving is standaard niet prominent maar wordt door sommige thema's getoond."
+msgstr "De beschrijving is standaard niet prominent aanwezig; sommige thema's kunnen deze echter wel tonen."
 
 #: wp-admin/edit-tag-form.php:171 wp-admin/edit-tags.php:463
 msgid "The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
-msgstr "De &#8220;slug&#8221; is de URL-vriendelijke versie van de naam. Een slug bevat alleen (kleine) letters, cijfers en koppeltekens."
+msgstr "De &#8220;slug&#8221; is de URL-vriendelijke versie van de naam. Het bestaat gewoonlijk uit alleen kleine letters en bevat alleen letters, cijfers en koppeltekens."
 
 #: wp-admin/themes.php:267 wp-admin/themes.php:271
 msgid "Visit site"
@@ -15210,7 +15210,7 @@ msgstr "Header bijgewerkt. <a href=\"%s\">Bezoek je site</a> om te zien hoe het 
 #: wp-admin/includes/class-custom-image-header.php:503
 #: wp-admin/includes/theme.php:328
 msgid "Custom Header"
-msgstr "Header aanpassen"
+msgstr "Aangepaste header"
 
 #: wp-admin/includes/template.php:2487 wp-admin/nav-menus.php:813
 #: wp-admin/options.php:402
