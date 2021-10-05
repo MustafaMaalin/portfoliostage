@@ -3,23 +3,26 @@
 @import "assets/scss/media-queries";
 @import "assets/scss/blocks";
 @import "assets/scss/blocks-portfolio";
-@import "assets/scss/fontawesome/scss/fontawesome.css";
-@import "assets/scss/fontawesome/scss/solid.scss";
-@import "assets/scss/fontawesome/scss/brands.scss";
+@import "assets/scss/blockcontent";
 
 
 * {
   box-sizing: border-box;
+
+}
+
+body, html {
+  cursor: url(https://i.imgur.com/BMeJ25j.png), default;
 }
 
 html {
   margin-top: 0 !important;
+
 }
 
 body {
   margin: 0;
   padding: 0;
-
 
 
   p {
@@ -32,13 +35,23 @@ body {
 }
 
 @include xs() {
+  .scroll {
+
+    .scrolltop {
+      position: static;
+      left: 300px;
+      bottom: 15px;
+      font-size: 60px;
+      color: black;
+    }
+  }
   .menu-open {
-    &:after{
-      content:"";
+    &:after {
+      content: "";
       position: absolute;
-      top:0;
-      width:100%;
-      height:250%;
+      top: 0;
+      width: 100%;
+      height: 250%;
       z-index: 9;
       backdrop-filter: blur(5px);
       background-color: rgba(0, 0, 0, 0.8);
@@ -82,16 +95,15 @@ body {
       }
     }
   }
-
   .container {
     .title_homepage {
-      h1{
-      font-size: 25px;
-      font-family: Verdana;
-      margin-left: 65px;
-      margin-top: 20px;
+      h1 {
+        font-size: 25px;
+        font-family: Verdana;
+        margin-left: 65px;
+        margin-top: 20px;
       }
-      }
+    }
 
     .img_fluid {
       width: 250px;
@@ -110,13 +122,13 @@ body {
   }
   .stagecontainer {
     .stagetitel {
-      h1{
-      font-size: 25px;
-      font-family: Verdana;
-      margin-left: 65px;
-      margin-top: 20px;
+      h1 {
+        font-size: 25px;
+        font-family: Verdana;
+        margin-left: 65px;
+        margin-top: 20px;
       }
-      }
+    }
 
     .img-stage {
       width: 250px;
@@ -133,7 +145,24 @@ body {
       margin-left: 45px;
     }
   }
+  .portfolio-items {
 
+    .list-group {
+      display: flex;
+      justify-content: normal;
+      flex-direction: column;
+      margin-top: 40px;
+
+
+      .list-group-item {
+        .items {
+          width: 300px;
+          height: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 @include sm() {
@@ -185,6 +214,7 @@ body {
       left: 120px;
     }
   }
+
 }
 
 //big tablet
@@ -239,6 +269,17 @@ body {
     top: 0;
   }
 
+}
+
+.scroll {
+
+  .scrolltop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    font-size: 60px;
+    color: black;
+  }
 }
 
 /*

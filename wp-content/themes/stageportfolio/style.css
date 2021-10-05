@@ -1,18 +1,393 @@
-/* Error: Undefined variable.
- *    ,
- * 23 |         content: fa-content($fa-var-user);
- *    |                             ^^^^^^^^^^^^
- *    '
- *   assets\scss\_blocks-portfolio.scss 23:29  @import
- *   style.scss 5:9                            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 23 \2502          content: fa-content($fa-var-user);\d\a    \2502                              ^^^^^^^^^^^^\a    \2575 \a   assets\\scss\\_blocks-portfolio.scss 23:29  @import\a   style.scss 5:9                            root stylesheet";
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  font-family: "Verdana", sans-serif;
+}
+.navbar li {
+  list-style-type: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+}
+.navbar li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+.navbar li a:hover::after {
+  width: 100%;
+}
+.navbar .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.1rem;
+  height: 2.1rem;
+  cursor: pointer;
+}
+.navbar .toggle-button .bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.8s;
+}
+.navbar .toggle-button.active .bar-1 {
+  transform: rotateZ(-410deg) translate(-8px, 8px);
+}
+.navbar .toggle-button.active .bar-2 {
+  opacity: 0;
+}
+.navbar .toggle-button.active .bar-3 {
+  transform: rotateZ(410deg) translate(-10px, -11px);
+}
+
+.logo-image {
+  width: 40px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.container .title_homepage h1 {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 203px;
+  margin-top: 250px;
+}
+.container .title_homepage line-animation::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+.container .title_homepage line-animation:hover::after {
+  width: 100%;
+}
+.container .img_fluid {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  top: 200px;
+}
+.container .welkomteksten {
+  font-size: 20px;
+  width: 600px;
+  margin-left: 208px;
+}
+
+.stagecontainer {
+  padding-bottom: 100px;
+}
+.stagecontainer .stagetitel h1 {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 203px;
+  margin-top: 400px;
+}
+.stagecontainer .stageteksten {
+  font-size: 20px;
+  width: 600px;
+  margin-left: 208px;
+}
+.stagecontainer .img-stage {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  top: 950px;
+}
+
+.portfolio-items .portfolio-titel {
+  color: black;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Verdana", sans-serif;
+}
+.portfolio-items .list-group {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-evenly;
+}
+.portfolio-items .list-group .list-group-item {
+  list-style-type: none;
+}
+.portfolio-items .list-group .list-group-item .items {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+.portfolio-items .list-group .list-group-item .items a {
+  text-decoration: none;
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
+.portfolio-items .list-group .list-group-item .items :hover {
+  opacity: 0.5;
+}
+
+.content-stage {
+  padding: 9rem;
+  line-height: 1.5rem;
+}
+.content-stage h1 {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Verdana", sans-serif;
+  margin-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  cursor: url(https://i.imgur.com/BMeJ25j.png), default;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body p {
+  font-family: Roboto;
+}
+
+.content {
+  margin-top: 120px !important;
+}
+
+@media screen and (max-width: 599px) {
+  .scroll .scrolltop {
+    position: static;
+    left: 300px;
+    bottom: 15px;
+    font-size: 60px;
+    color: black;
+  }
+
+  .menu-open:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250%;
+    z-index: 9;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .toggle-button {
+    display: flex;
+    margin-top: 30px;
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .menu-container {
+    z-index: 9999;
+    background-color: white;
+    display: none;
+    width: 100%;
+  }
+  .menu-container.active {
+    display: block;
+  }
+  .menu-container ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu-container li {
+    text-align: center;
+  }
+  .menu-container li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .container .title_homepage h1 {
+    font-size: 25px;
+    font-family: Verdana;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  .container .img_fluid {
+    width: 250px;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 65px;
+    top: 0;
+  }
+  .container .welkomteksten {
+    font-size: 18px;
+    width: 300px;
+    margin-left: 45px;
+  }
+
+  .stagecontainer .stagetitel h1 {
+    font-size: 25px;
+    font-family: Verdana;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  .stagecontainer .img-stage {
+    width: 250px;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 65px;
+    top: 0;
+  }
+  .stagecontainer .stageteksten {
+    font-size: 18px;
+    width: 300px;
+    margin-left: 45px;
+  }
+
+  .portfolio-items .list-group {
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .portfolio-items .list-group .list-group-item .items {
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .container .title_homepage h1 {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .container .welkomteksten {
+    font-size: 20px;
+    margin-left: 120px;
+    width: 600px;
+  }
+  .container .img_fluid {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0px;
+    left: 150px;
+  }
+
+  .stagecontainer .stagetitel h1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .stagecontainer .stageteksten {
+    margin-left: 120px;
+    font-size: 20px;
+  }
+  .stagecontainer .img-stage {
+    position: relative;
+    top: 0px;
+    left: 120px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1300px) {
+  .navbar {
+    font-size: 30px;
+  }
+
+  .container .title_homepage h1 {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .container .welkomteksten {
+    font-size: 30px;
+    margin-left: 200px;
+    width: 600px;
+    text-align: center;
+  }
+  .container .img_fluid {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0px;
+    left: 230px;
+  }
+
+  .stagetitel h1 {
+    margin-top: 10px;
+  }
+  .stagetitel .stageteksten {
+    font-size: 25px;
+    width: 650px;
+    margin-left: 150px;
+    text-align: center;
+  }
+
+  .img-stage {
+    width: 250px;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 30px;
+    top: 0;
+  }
+}
+.scroll .scrolltop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  font-size: 60px;
+  color: black;
+}
+
+/*
+Theme Name: stageportfolio
+Text Domain: stageportfolio
+Version: 1.0
+Description: Mustafa Maalin's stageportfolio
+tags: stage, portfolio, responsive
+Author: Mustafa Maalin
+Author URI: mustafamaalin.nl
+*/
+
+/*# sourceMappingURL=style.css.map */
