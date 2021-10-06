@@ -1,5 +1,6 @@
 <?php /* Template Name: Content Stage */ ?>
 <?php get_header(); ?>
+
 <?php if ( have_rows( 'contentporfolio' ) ): ?>
 
 	<?php while ( have_rows( 'contentporfolio' ) ): the_row();

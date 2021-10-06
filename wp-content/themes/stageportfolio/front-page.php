@@ -22,9 +22,7 @@
     </div>
     <div class="welkomteksten">
         <p class="welkomtekst">
-			<?php
-			the_field( 'description_stage' );
-			?>
+			<?php the_field( 'description_stage' );?>
         </p>
     </div>
     <div class="img-home">

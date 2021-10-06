@@ -4,11 +4,9 @@
 
 <?php if ( have_rows( 'repeater_image' ) ): ?>
     <div class="portfolio-items">
-		<?php
-		$portfoliotitle = get_sub_field( 'portfoliotitel' );
-		?>
 
-        <h1 class="portfolio-titel"> Portfolio </h1>
+
+        <h1 class="portfolio-titel"> <?php the_field( 'portfoliotitel' );?> </h1>
 
         <ul class="list-group">
 			<?php while ( have_rows( 'repeater_image' ) ): the_row();
