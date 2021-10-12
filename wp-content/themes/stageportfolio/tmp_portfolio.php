@@ -17,7 +17,7 @@
 				?>
                 <li class="list-group-item">
                     <div class="items">
-						<?php if ( $link ): ?>
+
                         <a href="<?php echo $link['url']; ?>">
 
                             <img src="<?php echo $picture; ?>">
@@ -25,7 +25,7 @@
 
                         </a>
                     </div>
-					<?php endif; ?>
+
                 </li>
 			<?php endwhile; ?>
 

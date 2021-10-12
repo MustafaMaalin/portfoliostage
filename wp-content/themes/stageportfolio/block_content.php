@@ -22,6 +22,14 @@
             <p><?php echo $contenttext ?></p>
         <img src="<?php echo $pictures; ?>" class="img-block">
         </div>
+       <div class="wrapper">
+                  <a class="cta" href="#">
+                    <span>NEXT</span>
+                    <span>
+                      <i class="fas fa-angle-double-right"></i>
+                    </span>
+                  </a>
+                </div>
 
 	<?php endwhile; ?>
 

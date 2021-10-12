@@ -12,7 +12,7 @@
 		?>
 	<?php endwhile; ?>
 <?php endif; ?>
-<h1> <?php the_field( 'titel_contact' );?></h1>
+<h1 class="area_title" > <?php the_field( 'titel_contact' );?></h1>
 <div class="accordion">
 
      <input type="radio" name="select" class="accordion-select" checked />

@@ -8,6 +8,8 @@ function mustafa_setup() {
 		'bottom-footer' => esc_html__( 'Bottom-Footer', 'mustafa' ),
 	) );
 }
+add_filter('jpeg_quality', function($arg){return 100;});
+
 
 add_action( 'after_setup_theme', 'mustafa_setup' );
 

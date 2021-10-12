@@ -1,3 +1,9 @@
+
+.area_title {
+  font-family: $font-h1;
+  text-align: center;
+}
+
 .accordion {
   box-sizing: border-box;
   display: flex;
@@ -15,6 +21,7 @@
 
 .accordion-title {
   position: relative;
+
 }
 
 .accordion-title:not(:nth-last-child(2))::after {
@@ -51,15 +58,15 @@
 /* Generated styles starts here */
 
 .accordion {
-  border-color: #dedede;
+  border-color: #dedede ;
   border-radius: 8px;
   border-style: solid;
   border-width: 1px;
   flex-direction: column;
   height: auto;
-  width: 600px;
-  margin-left: 500px;
-  margin-top: 200px;
+  width: 1000px;
+  margin-left: 350px;
+  margin-top: 50px;
 }
 
 .accordion-title,

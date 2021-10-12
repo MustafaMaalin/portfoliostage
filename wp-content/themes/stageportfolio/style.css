@@ -204,6 +204,62 @@
   font-family: "Verdana", sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.cta {
+  position: absolute;
+  left: 110px;
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: black;
+  background: #A9A9A9;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 black;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg);
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.area_title {
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
 .accordion {
   box-sizing: border-box;
   display: flex;
@@ -262,9 +318,9 @@
   border-width: 1px;
   flex-direction: column;
   height: auto;
-  width: 600px;
-  margin-left: 500px;
-  margin-top: 200px;
+  width: 1000px;
+  margin-left: 350px;
+  margin-top: 50px;
 }
 
 .accordion-title,
@@ -471,7 +527,7 @@ body p {
     position: absolute;
     left: 50px;
     top: 0px;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Verdana", sans-serif;
   }
 
@@ -479,7 +535,7 @@ body p {
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
-    margin-top: 70px;
+    margin-top: 30px;
     position: relative;
     margin-left: 50px;
   }
@@ -498,16 +554,17 @@ body p {
   .positionh1-2 .titlecss {
     position: absolute;
     left: 50px;
-    top: 10px;
-    font-size: 50px;
+    top: 30px;
+    font-size: 40px;
     font-family: "Verdana", sans-serif;
+    margin-bottom: 50px;
   }
 
   .content-stage2 {
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
-    margin-top: 20px;
+    margin-top: 80px;
     position: relative;
   }
   .content-stage2 p {
@@ -517,6 +574,14 @@ body p {
   .content-stage2 img {
     width: 290px;
     margin-left: 50px;
+  }
+
+  .wrapper {
+    margin-top: 50px;
+  }
+  .wrapper .cta {
+    left: 50px;
+    bottom: -25px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 959px) {
