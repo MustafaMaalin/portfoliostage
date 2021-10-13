@@ -35,6 +35,233 @@ body {
   margin-top: 120px !important;
 }
 
+//mobiel-s
+@include xs-s() {
+  .scroll {
+
+    .scrolltop {
+      position: static;
+      bottom: 15px;
+      font-size: 60px;
+      color: black;
+    }
+  }
+  .menu-open {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 250%;
+      z-index: 9;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+  }
+  .navbar {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .toggle-button {
+      display: flex;
+      margin-top: 30px;
+      width: 50px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+  .menu-container {
+    z-index: 9999;
+    background-color: white;
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: block;
+    }
+
+    ul {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    li {
+      text-align: center;
+
+      a {
+        padding: .5rem 1rem;
+      }
+    }
+  }
+  .container {
+    .title_homepage {
+      h1 {
+        font-size: 20px;
+        font-family: Verdana;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+    }
+
+    .img_fluid {
+      width: 230px;
+      height: auto;
+      position: relative;
+      right: 0;
+      left: 50px;
+      top: 0;
+    }
+
+    .welkomteksten {
+      font-size: 18px;
+      width: 250px;
+      margin-left: 45px;
+    }
+  }
+  .stagecontainer {
+    .stagetitel {
+      h1 {
+        font-size: 18px;
+        font-family: Verdana;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+    }
+
+    .img-stage {
+      width: 230px;
+      height: auto;
+      position: relative;
+      right: 0;
+      left: 50px;
+      top: 0;
+    }
+
+    .stageteksten {
+      font-size: 17px;
+      width: 250px;
+      margin-left: 45px;
+    }
+  }
+  .portfolio-items {
+
+    .list-group {
+      display: flex;
+      justify-content: normal;
+      flex-direction: column;
+      margin-top: 40px;
+
+
+      .list-group-item {
+        .items {
+          width: 300px;
+          height: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .accordion {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 50px;
+
+    .accordion-title span {
+      transform: rotate(0deg);
+      -ms-writing-mode: lr-tb;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+      padding-left: 33px;
+      padding-right: 33px;
+      line-height: 65px;
+    }
+
+    .accordion-content {
+      background-color: #f7f7f7;
+      color: #7f8787;
+      height: 280px;
+      margin-bottom: -280px;
+      margin-right: 0;
+      padding: 30px;
+      width: 100%;
+    }
+  }
+  .positionh1 {
+    position: relative;
+
+    .titlecss {
+      position: absolute;
+      left: 35px;
+      top: 0px;
+      font-size: 35px;
+      font-family: $font-h1;
+    }
+  }
+  .content-stage {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 50px;
+
+    p {
+      width: 270px;
+      margin-top: 100px;
+      margin-left: -20px;
+    }
+
+    img {
+      width: 200px;
+      margin-left: 0px;
+    }
+  }
+  .positionh1-2 {
+    position: relative;
+
+    .titlecss {
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      font-size: 35px;
+      font-family: $font-h1;
+      margin-bottom: 50px;
+
+    }
+  }
+  .content-stage2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 80px;
+    position: relative;
+    margin-right: 0px;
+
+    p {
+      width: 270px;
+      margin-top: 100px;
+      margin-left: 30px;
+    }
+
+    img {
+      width: 200px;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  .wrapper {
+    margin-top: 50px;
+
+    .cta {
+      left: 35px;
+      bottom: -29px;
+    }
+  }
+}
+
+//mobiel M dev tools
 @include xs() {
   .scroll {
 
@@ -101,7 +328,7 @@ body {
       h1 {
         font-size: 25px;
         font-family: Verdana;
-        margin-left: 65px;
+        margin-left: 80px;
         margin-top: 20px;
       }
     }
@@ -117,14 +344,14 @@ body {
 
     .welkomteksten {
       font-size: 18px;
-      width: 300px;
+      width: 310px;
       margin-left: 45px;
     }
   }
   .stagecontainer {
     .stagetitel {
       h1 {
-        font-size: 25px;
+        font-size: 20px;
         font-family: Verdana;
         margin-left: 65px;
         margin-top: 20px;
@@ -258,7 +485,271 @@ body {
   }
 }
 
+//mobiel L dev tools
+@include xs-l() {
+  .menu-open {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 250%;
+      z-index: 9;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+  }
+  .navbar {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .toggle-button {
+      display: flex;
+      margin-top: 30px;
+      width: 50px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+  .menu-container {
+    z-index: 9999;
+    background-color: white;
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: block;
+    }
+
+    ul {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    li {
+      text-align: center;
+
+      a {
+        padding: .5rem 1rem;
+      }
+    }
+  }
+  .container {
+    .title_homepage {
+      h1 {
+        font-size: 25px;
+        font-family: Verdana;
+        margin-left: 100px;
+        margin-top: 20px;
+      }
+    }
+
+    .img_fluid {
+      width: 250px;
+      height: auto;
+      position: relative;
+      right: 0;
+      left: 80px;
+      top: 0;
+    }
+
+    .welkomteksten {
+      font-size: 18px;
+      width: 300px;
+      margin-left: 65px;
+    }
+  }
+  .stagecontainer {
+    .stagetitel {
+      h1 {
+        font-size: 20px;
+        font-family: Verdana;
+        margin-left: 80px;
+        margin-top: 20px;
+      }
+    }
+
+    .img-stage {
+      width: 250px;
+      height: auto;
+      position: relative;
+      right: 0;
+      left: 65px;
+      top: 0;
+    }
+
+    .stageteksten {
+      font-size: 18px;
+      width: 300px;
+      margin-left: 65px;
+    }
+  }
+  .portfolio-items {
+
+    .list-group {
+      display: flex;
+      justify-content: normal;
+      flex-direction: column;
+      margin-top: 40px;
+
+
+      .list-group-item {
+        .items {
+          width: 300px;
+          height: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .accordion {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 50px;
+
+    .accordion-title span {
+      transform: rotate(0deg);
+      -ms-writing-mode: lr-tb;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+      padding-left: 33px;
+      padding-right: 33px;
+      line-height: 65px;
+    }
+
+    .accordion-content {
+      background-color: #f7f7f7;
+      color: #7f8787;
+      height: 280px;
+      margin-bottom: -280px;
+      margin-right: 0;
+      padding: 30px;
+      width: 100%;
+    }
+  }
+  .positionh1 {
+    position: relative;
+
+    .titlecss {
+      position: absolute;
+      left: 50px;
+      top: 0px;
+      font-size: 40px;
+      font-family: $font-h1;
+    }
+  }
+  .content-stage {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 50px;
+
+    p {
+      width: 360px;
+      margin-top: 100px;
+    }
+
+    img {
+      width: 290px;
+      margin-left: 0;
+    }
+  }
+  .positionh1-2 {
+    position: relative;
+
+    .titlecss {
+      position: absolute;
+      left: 50px;
+      top: 30px;
+      font-size: 40px;
+      font-family: $font-h1;
+      margin-bottom: 50px;
+
+    }
+  }
+  .content-stage2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 80px;
+    position: relative;
+
+
+    p {
+      width: 360px;
+      margin-top: 100px;
+    }
+
+    img {
+      width: 290px;
+      margin-left: 50px;
+    }
+  }
+  .wrapper {
+    margin-top: 50px;
+
+    .cta {
+      left: 50px;
+      bottom: -25px;
+    }
+  }
+}
+
 @include sm() {
+  .menu-open {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 250%;
+      z-index: 9;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+  }
+  .navbar {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .toggle-button {
+      display: flex;
+      margin-top: 30px;
+      width: 50px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+  .menu-container {
+    z-index: 9999;
+    background-color: white;
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: block;
+    }
+
+    ul {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    li {
+      text-align: center;
+
+      a {
+        padding: .5rem 1rem;
+      }
+    }
+  }
   .container {
     .title_homepage {
       h1 {
@@ -307,29 +798,68 @@ body {
       left: 120px;
     }
   }
+  .content-stage {
 
+    img {
+      display: none;
+    }
+
+    margin-top: 0px;
+    margin-left: 70px;
+    width: 650px;
+  }
+  .content-stage2 {
+    margin-right: 70px;
+    margin-bottom: 50px;
+
+    p {
+      margin-left: 70px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+  .positionh1 {
+    .titlecss {
+      position: absolute;
+      left: 70px;
+      top: 10px;
+      font-size: 50px;
+      font-family: "Verdana", sans-serif;
+    }
+  }
+  .positionh1-2 {
+    .titlecss {
+      right: 430px;
+      top: 140px;
+    }
+  }
+  .wrapper {
+    margin-top: 30px;
+
+    .cta {
+      left: 80px;
+    }
+  }
 }
 
-//big tablet
-@include lg() {
-  .navbar {
-    font-size: 30px;
-  }
+@include md() {
   .container {
     .title_homepage {
       h1 {
         margin-top: 50px;
-        margin-left: 30px;
+        margin-left: 20px;
         font-size: 30px;
         text-align: center;
       }
     }
 
     .welkomteksten {
-      font-size: 25px;
-      width: 650px;
-      margin-left: 150px;
-      text-align: center;
+      font-size: 20px;
+      margin-left: 230px;
+      width: 600px;
+
     }
 
     .img_fluid {
@@ -344,31 +874,88 @@ body {
   .stagecontainer {
     .stagetitel {
       h1 {
-        margin-top: 35px;
+        margin-top: 50px;
+        margin-left: 20px;
         font-size: 30px;
-        margin-left: 320px;
-      }
-
-      .stageteksten {
-        font-size: 25px;
-        width: 650px;
-        margin-left: 150px;
         text-align: center;
       }
+    }
+
+    .stageteksten {
+      font-size: 20px;
+      margin-left: 230px;
+      width: 630px;
     }
 
     .img-stage {
       width: 500px;
       height: auto;
       position: relative;
-      top: 60px;
+      top: 0;
       right: 0px;
       left: 230px;
     }
   }
+  .content-stage {
+    margin-top: 0;
 
+    img {
+      display: none;
+    }
+  }
+  .positionh1 {
+    .titlecss {
+      top: 20px;
+    }
+  }
+  .content-stage2 {
+    margin-top: 40px;
+    margin-left: 100px;
 
+    p {
+      margin-left: 0;
+    }
+
+    img {
+      display: none;
+    }
+  }
+  .positionh1-2 {
+    .titlecss {
+      top: 70px;
+    }
+  }
 }
+
+@include lg() {
+  .container {
+    .title_homepage {
+      h1 {
+        font-size: 35px;
+        margin-left: 180px;
+      }
+    }
+
+    .welkomteksten {
+      margin-left: 180px;
+    }
+  }
+
+  .stagecontainer {
+
+    .stagetitel {
+      h1 {
+        font-size: 35px;
+        margin-left: 180px;
+      }
+    }
+
+    .stageteksten {
+      margin-left: 180px;
+    }
+  }
+}
+
 
 .scroll {
 
