@@ -66,6 +66,34 @@
   margin-left: 40px;
 }
 
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 30ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .container .title_homepage h1 {
   font-family: "Roboto";
   font-size: 50px;
@@ -139,13 +167,15 @@
   height: auto;
   text-align: center;
 }
+.portfolio-items .list-group .list-group-item .items:hover {
+  transform: scale(1.3);
+  transition: all 0.8s ease-in-out;
+  opacity: 0.5;
+}
 .portfolio-items .list-group .list-group-item .items a {
   text-decoration: none;
   color: black;
   font-family: "Verdana", sans-serif;
-}
-.portfolio-items .list-group .list-group-item .items :hover {
-  opacity: 0.5;
 }
 
 .content-stage {
@@ -160,7 +190,7 @@
   margin-top: 150px;
 }
 .content-stage img {
-  width: 500px;
+  width: 550px;
   margin-left: 50px;
 }
 
@@ -178,8 +208,10 @@
   margin-left: 50px;
 }
 .content-stage2 img {
-  width: 500px;
-  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 550px;
+  height: 400px;
 }
 
 .positionh1 {
@@ -645,7 +677,7 @@ body p {
   .container .title_homepage h1 {
     font-size: 25px;
     font-family: Verdana;
-    margin-left: 80px;
+    margin-left: 45px;
     margin-top: 20px;
   }
   .container .img_fluid {
@@ -653,19 +685,19 @@ body p {
     height: auto;
     position: relative;
     right: 0;
-    left: 65px;
+    left: 45px;
     top: 0;
   }
   .container .welkomteksten {
     font-size: 18px;
-    width: 310px;
+    width: 285px;
     margin-left: 45px;
   }
 
   .stagecontainer .stagetitel h1 {
     font-size: 20px;
     font-family: Verdana;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-top: 20px;
   }
   .stagecontainer .img-stage {
@@ -673,13 +705,207 @@ body p {
     height: auto;
     position: relative;
     right: 0;
-    left: 65px;
+    left: 45px;
     top: 0;
   }
   .stagecontainer .stageteksten {
     font-size: 18px;
-    width: 300px;
+    width: 285px;
     margin-left: 45px;
+  }
+
+  .portfolio-items .list-group {
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .portfolio-items .list-group .list-group-item .items {
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
+
+  .accordion {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .accordion .accordion-title span {
+    transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 65px;
+  }
+  .accordion .accordion-content {
+    background-color: #f7f7f7;
+    color: #7f8787;
+    height: 280px;
+    margin-bottom: -280px;
+    margin-right: 0;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .positionh1 {
+    position: relative;
+  }
+  .positionh1 .titlecss {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    font-size: 40px;
+    font-family: "Verdana", sans-serif;
+  }
+
+  .content-stage {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 50px;
+  }
+  .content-stage p {
+    width: 290px;
+    margin-top: 100px;
+  }
+  .content-stage img {
+    width: 290px;
+    margin-left: 0;
+  }
+
+  .positionh1-2 {
+    position: relative;
+  }
+  .positionh1-2 .titlecss {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 40px;
+    font-family: "Verdana", sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .content-stage2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 80px;
+    position: relative;
+  }
+  .content-stage2 p {
+    width: 290px;
+    margin-top: 100px;
+  }
+  .content-stage2 img {
+    width: 290px;
+    margin-left: 50px;
+  }
+
+  .wrapper {
+    margin-top: 50px;
+  }
+  .wrapper .cta {
+    left: 50px;
+    bottom: -25px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 390px) {
+  .scroll .scrolltop {
+    position: static;
+    left: 300px;
+    bottom: 15px;
+    font-size: 60px;
+    color: black;
+  }
+
+  .menu-open:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250%;
+    z-index: 9;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .toggle-button {
+    display: flex;
+    margin-top: 30px;
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .menu-container {
+    z-index: 9999;
+    background-color: white;
+    display: none;
+    width: 100%;
+  }
+  .menu-container.active {
+    display: block;
+  }
+  .menu-container ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu-container li {
+    text-align: center;
+  }
+  .menu-container li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .container .title_homepage h1 {
+    font-size: 25px;
+    font-family: Verdana;
+    margin-left: 55px;
+    margin-top: 20px;
+  }
+  .container .img_fluid {
+    width: 250px;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 55px;
+    top: 0;
+  }
+  .container .welkomteksten {
+    font-size: 18px;
+    width: 285px;
+    margin-left: 55px;
+  }
+
+  .stagecontainer .stagetitel h1 {
+    font-size: 20px;
+    font-family: Verdana;
+    margin-left: 55px;
+    margin-top: 20px;
+  }
+  .stagecontainer .img-stage {
+    width: 250px;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 55px;
+    top: 0;
+  }
+  .stagecontainer .stageteksten {
+    font-size: 18px;
+    width: 285px;
+    margin-left: 55px;
   }
 
   .portfolio-items .list-group {
@@ -1180,6 +1406,7 @@ body p {
   bottom: 15px;
   font-size: 60px;
   color: black;
+  transition: all 0.8s ease;
 }
 
 /*

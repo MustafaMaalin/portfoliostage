@@ -8,9 +8,6 @@ function mustafa_setup() {
 		'bottom-footer' => esc_html__( 'Bottom-Footer', 'mustafa' ),
 	) );
 }
-add_filter('jpeg_quality', function($arg){return 100;});
-
-
 add_action( 'after_setup_theme', 'mustafa_setup' );
 
 function mustafamaalin_register_styles() {
@@ -22,8 +19,11 @@ add_action( 'wp_enqueue_scripts', 'mustafamaalin_register_styles' );
 
 function collectiveray_theme_scripts_function() {
 	wp_enqueue_script( 'js-file', get_template_directory_uri() . '/assets/js/navbar.js', '', '', true );
+	wp_enqueue_script( 'js-file-scroll', get_template_directory_uri() . '/assets/js/scrolltop.js', '', '', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'collectiveray_theme_scripts_function' );
+
+add_filter('jpeg_quality', function($arg){return 100;});
 
 ?>

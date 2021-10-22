@@ -9,6 +9,7 @@
 </head>
 <header>
     <body>
+
     <nav class="navbar" id="navbarId">
             <div class="logo-container"><a class="logo" href="#"> <img class="logo-image" src="<?php echo get_template_directory_uri()."/assets/images/mustafa-logo.png";?>"> </a></div>
         <a href="#" class='toggle-button'>

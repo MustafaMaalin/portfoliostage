@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Font Awesome - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-06 07:38:09+0000\n"
+"PO-Revision-Date: 2021-10-17 08:01:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,10 +28,6 @@ msgstr "Mislukt tijdens de upgrade bij het verwijderen van de hoofdoptie Font Aw
 #: includes/class-fontawesome.php:856
 msgid "Font Awesome Settings"
 msgstr "Font Awesome Settings"
-
-#. Description of the plugin
-msgid "The official way to use Font Awesome Free or Pro icons on your site, brought to you by the Font Awesome team."
-msgstr "De officiële manier om Font Awesome Free- of Pro-pictogrammen op je site te gebruiken, aangeboden door het Font Awesome-team."
 
 #: includes/class-fontawesome.php:791
 msgid "Hey there, from the Font Awesome plugin!"
@@ -107,10 +103,6 @@ msgstr "Onvoorstelbaar! Op de een of andere manier werd de informatie over confl
 msgid "We were not able to save conflict detection data to your WordPress database."
 msgstr "We konden geen gegevens over conflictdetectie opslaan in je WordPress-database."
 
-#: font-awesome.php:162
-msgid "Unable To Load Font Awesome Plugin."
-msgstr "Kan Font Awesome Plugin niet laden."
-
 #. translators: 1: minimum required php version 2: current php version
 #: font-awesome.php:177
 msgid "Font Awesome requires a PHP Version of at least %1$s. Your current version of PHP is %2$s."
@@ -147,10 +139,6 @@ msgstr "De actieve versie van de Font Awesome-plugin wordt geladen door deze plu
 msgid "Head over to the %1$sFont Awesome Settings%2$s page to see how you can fix it up, or snooze this warning for a while."
 msgstr "Ga naar de %1$sFont Awesome Settings%2$s pagina om te zien hoe je het kan oplossen of deze waarschuwing een tijdje kan snoozen."
 
-#: includes/class-fontawesome.php:895
-msgid "Great Scott!"
-msgstr "Geweldig Scott!"
-
 #: includes/class-fontawesome-exception.php:317
 msgid "Whoops! You found a corner case here. Version 4 compatibility for our webfont technology was not introduced until Font Awesome 5.1.0. Try using a newer version, disabling version 4 compatibility, or switch to SVG."
 msgstr "Oeps! Je hebt hier een corner case gevonden. Compatibiliteit met versie 4 voor onze webfont-technologie werd pas geïntroduceerd in Font Awesome 5.1.0. Gebruik een nieuwere versie, schakel compatibiliteit met versie 4 uit of schakel over naar SVG."
@@ -158,6 +146,18 @@ msgstr "Oeps! Je hebt hier een corner case gevonden. Compatibiliteit met versie 
 #: includes/class-fontawesome-exception.php:415
 msgid "Something went wrong when we tried to store the list of available Font Awesome versions in your WordPress database."
 msgstr "Er is iets misgegaan toen we probeerden de lijst met beschikbare Font Awesome versies op te slaan in je WordPress database."
+
+#. Description of the plugin
+msgid "The official way to use Font Awesome Free or Pro icons on your site, brought to you by the Font Awesome team."
+msgstr "De officiële manier om Font Awesome Free of Pro pictogrammen op je site te gebruiken, aangeboden door het Font Awesome-team."
+
+#: includes/class-fontawesome.php:895
+msgid "Great Scott!"
+msgstr "Mensenlief!"
+
+#: font-awesome.php:162
+msgid "Unable To Load Font Awesome Plugin."
+msgstr "Kan Font Awesome plugin niet laden."
 
 #. Plugin Name of the plugin
 #. Author of the plugin

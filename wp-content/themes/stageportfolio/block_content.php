@@ -9,7 +9,7 @@
 		$contenttitle = get_sub_field( 'titlecontent' );
 		$contenttext  = get_sub_field( 'descriptionportfolio' );
         $imageproject= get_sub_field( 'image_project' );
-        $pictures     = $imageproject ['sizes']['thumbnail'];
+        $pictures     = $imageproject ['sizes']['large'];
 
 		?>
 
@@ -22,7 +22,7 @@
             <p><?php echo $contenttext ?></p>
         <img src="<?php echo $pictures; ?>" class="img-block">
         </div>
-       <div class="wrapper">
+       <div class="">
                   <a class="cta" href="#">
                     <span>NEXT</span>
                     <span>
@@ -42,7 +42,7 @@
             $contenttitle2 = get_sub_field( 'titlecontent2' );
             $contenttexts = get_sub_field( 'descriptionportfolio2' );
             $imageproject2= get_sub_field( 'image_project2' );
-            $pictures2     = $imageproject2 ['sizes']['thumbnail'];
+            $pictures2     = $imageproject2 ['sizes']['large'];
     		?>
 
     			<div class="positionh1-2">
