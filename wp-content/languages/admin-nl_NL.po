@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-06 11:32:01+0000\n"
+"PO-Revision-Date: 2021-10-27 08:32:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5751,7 +5751,7 @@ msgstr "Je kunt nieuwe plugins vinden om te installeren door te zoeken of blader
 #. translators: %s: https://wordpress.org/plugins
 #: wp-admin/plugin-install.php:88
 msgid "Plugins hook into WordPress to extend its functionality with custom features. Plugins are developed independently from the core WordPress application by thousands of developers all over the world. All plugins in the official <a href=\"%s\">WordPress Plugin Directory</a> are compatible with the license WordPress uses."
-msgstr "Plugins haken in op WordPress om de functionaliteit uit te breiden met maatwerk. Plugins worden onafhankelijk van de WordPress applicatie zelf ontwikkeld door duizenden ontwikkelaars van over de hele wereld. Alle plugins in de officiële <a href=\"%s\">WordPress Plugin Directory</a> zijn compatible met de licentie die WordPress gebruikt."
+msgstr "Plugins haken in op WordPress om de functionaliteit uit te breiden met maatwerk. Plugins worden onafhankelijk van de WordPress applicatie zelf ontwikkeld door duizenden ontwikkelaars van over de hele wereld. Alle plugins in de officiële <a href=\"%s\">WordPress plugin directory</a> zijn compatible met de licentie die WordPress gebruikt."
 
 #: wp-admin/includes/plugin-install.php:331
 msgid "Search plugins by:"
@@ -6442,7 +6442,7 @@ msgstr "Snel &#8220;%s&#8221; bewerken"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:414
 msgid "Search for plugins in the WordPress Plugin Directory."
-msgstr "Plugins zoeken in de WordPress Plugin Directory."
+msgstr "Plugins zoeken in de WordPress plugin directory."
 
 #. translators: %s: Attachment title.
 #. translators: %s: Post title.
@@ -8793,7 +8793,7 @@ msgstr "Voeg nieuwe menu-onderdelen toe vanuit de linkerkolom."
 #. translators: %s: https://wordpress.org/plugins
 #: wp-admin/includes/plugin-install.php:272
 msgid "Plugins extend and expand the functionality of WordPress. You may automatically install plugins from the <a href=\"%s\">WordPress Plugin Directory</a> or upload a plugin in .zip format by clicking the button at the top of this page."
-msgstr "Plugins breiden de functionaliteiten van WordPress aanzienlijk uit. Je kunt plugins automatisch installeren vanaf de <a href=\"%s\">WordPress plugin map</a> of een plugin in .zip format uploaden door op de knop bovenaan deze pagina te klikken."
+msgstr "Plugins breiden de functionaliteiten van WordPress aanzienlijk uit. Je kunt plugins automatisch installeren vanaf de <a href=\"%s\">WordPress plugin directory</a> of een plugin in .zip format uploaden door op de knop bovenaan deze pagina te klikken."
 
 #. Plugin URI of the plugin
 msgid "http://wordpress.org/plugins/hello-dolly/"
@@ -9252,7 +9252,7 @@ msgstr "Je kunt ook bladeren door de favoriete plugins van gebruikers. Dit doe j
 
 #: wp-admin/plugin-install.php:100
 msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
-msgstr "Als je weet waar je naar op zoek bent, dan is de Zoek optie de beste keuze om het te vinden. Het Zoek scherm biedt opties om in de WordPress Plugin Directory op een specifieke term, auteur of tag te zoeken. Je kunt de directory ook doorzoeken via de populaire tags. Tags die groter in beeld verschijnen betekent dat meerdere plugins met die tag gelabeld zijn."
+msgstr "Als je weet waar je naar op zoek bent, dan is de Zoek optie de beste keuze om het te vinden. Het Zoek scherm biedt opties om in de WordPress plugin directory op een specifieke term, auteur of tag te zoeken. Je kunt de directory ook doorzoeken via de populaire tags. Tags die groter in beeld verschijnen betekent dat meerdere plugins met die tag gelabeld zijn."
 
 #: wp-admin/install.php:201 wp-admin/options-reading.php:206
 msgid "It is up to search engines to honor this request."
@@ -9483,7 +9483,7 @@ msgstr "%s voorvertonen"
 
 #: wp-admin/tools.php:49
 msgid "The Categories and Tags Converter link on this screen will take you to the Import screen, where that Converter is one of the plugins you can install. Once that plugin is installed, the Activate Plugin &amp; Run Importer link will take you to a screen where you can choose to convert tags into categories or vice versa."
-msgstr "De categorie&#235;n en tags converterlink brengt je naar de importeerpagina, waar de Converteer mogelijkheid &#233;&#233;n van de plugins is welke je kunt installeren. Eenmaal ge&#239;nstalleerd, brengt de link op deze pagina je naar een scherm waar je kunt kiezen wat je wilt omzetten."
+msgstr "De Categorieën en tags converter link op dit scherm brengt je naar het Import scherm, waar deze Converter één van de plugins is die je kunt installeren. Zodra deze plugin is geïnstalleerd, brengt de Plugin activeren &amp; importeren uitvoeren link je naar een scherm waar je kunt kiezen om tags in categorieën of andersom te converteren."
 
 #: wp-admin/tools.php:48
 msgid "Categories have hierarchy, meaning that you can nest sub-categories. Tags do not have hierarchy and cannot be nested. Sometimes people start out using one on their posts, then later realize that the other would work better for their content."
@@ -10162,7 +10162,7 @@ msgstr "Dit scherm geeft je toegang tot al je berichten. Je kunt de weergave van
 #. translators: %s: URL to Add Plugins screen.
 #: wp-admin/import.php:228
 msgid "If the importer you need is not listed, <a href=\"%s\">search the plugin directory</a> to see if an importer is available."
-msgstr "Als de importer zich niet in de lijst bevindt, <a href=\"%s\">zoek in de Plugin Directory</a>, misschien is daar de importer beschikbaar."
+msgstr "Als de importer zich niet in de lijst bevindt, <a href=\"%s\">zoek in de plugin directory</a>, misschien is daar de importer beschikbaar."
 
 #: wp-admin/edit-comments.php:181
 msgid "Moderating Comments"
@@ -10862,7 +10862,7 @@ msgstr "Extra thema&#39;'s voor je site kun je vinden door gebruik te maken van 
 #. translators: %s: WordPress Plugin Directory URL.
 #: wp-admin/plugins.php:549
 msgid "If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href=\"%s\">WordPress Plugin Directory</a>. Plugins in the WordPress Plugin Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
-msgstr "Als je meer plugins wil zien om uit te kiezen, klik op de &#8220;Nieuwe plugin&#8221; knop. Je kunt dan bladeren door of zoeken naar aanvullende plugins uit de <a href=\"%s\">WordPress Plugin Directory</a>. Plugins in de WordPress Plugin Directory zijn ontworpen en ontwikkeld door derden en zijn compatibel met de licentie die WordPress gebruikt. Oh, en ze zijn gratis!"
+msgstr "Als je meer plugins wil zien om uit te kiezen, klik op de &#8220;Nieuwe plugin&#8221; knop. Je kunt dan bladeren door of zoeken naar aanvullende plugins uit de <a href=\"%s\">WordPress plugin directory</a>. Plugins in de WordPress plugin directory zijn ontworpen en ontwikkeld door derden en zijn compatibel met de licentie die WordPress gebruikt. Oh, en ze zijn gratis!"
 
 #. translators: %s: MAX_FILE_SIZE
 #: wp-admin/includes/file.php:838
@@ -11587,7 +11587,7 @@ msgstr "Categorie&#235;n kunnen selectief worden geconverteerd naar tags met beh
 
 #: wp-admin/import.php:24
 msgid "This screen lists links to plugins to import data from blogging/content management platforms. Choose the platform you want to import from, and click Install Now when you are prompted in the popup window. If your platform is not listed, click the link to search the plugin directory for other importer plugins to see if there is one for your platform."
-msgstr "Dit scherm toont links naar plugins om gegevens uit sites en content management platformen te importeren. Kies vanuit welk platform je wilt importeren en klik op Nu installeren wanneer hierom wordt gevraagd in het popup-venster. Indien je platform niet in de lijst voorkomt, klik op de link om in de Plugin Directory voor andere importeerfunctie plugins zoeken."
+msgstr "Dit scherm toont links naar plugins om gegevens uit sites en content management platformen te importeren. Kies vanuit welk platform je wilt importeren en klik op Nu installeren wanneer hierom wordt gevraagd in het pop-up venster. Indien je platform niet in de lijst voorkomt, klik op de link om in de plugin directory naar andere import plugins te zoeken om te zien of er één is voor je platform."
 
 #: wp-admin/export.php:51
 msgid "Once generated, your WXR file can be imported by another WordPress site or by another blogging platform able to access this format."
@@ -14763,7 +14763,7 @@ msgstr "Kan benodigde map niet vinden (%s)."
 
 #: wp-admin/includes/class-wp-upgrader.php:154 wp-admin/includes/plugin.php:953
 msgid "Unable to locate WordPress plugin directory."
-msgstr "Kan de WordPress pluginmap niet lokaliseren."
+msgstr "Kan de WordPress plugin directory niet lokaliseren."
 
 #: wp-admin/includes/class-wp-upgrader.php:153
 msgid "Unable to locate WordPress content directory (wp-content)."
@@ -15138,8 +15138,8 @@ msgstr[1] "%s reacties hersteld vanuit spam."
 #: wp-admin/edit-comments.php:291
 msgid "%s comment marked as spam."
 msgid_plural "%s comments marked as spam."
-msgstr[0] "%s reactie aangemerkt als spam."
-msgstr[1] "%s reacties aangemerkt als spam."
+msgstr[0] "%s reactie gemarkeerd als spam."
+msgstr[1] "%s reacties gemarkeerd als spam."
 
 #. translators: %s: Number of comments.
 #: wp-admin/edit-comments.php:285

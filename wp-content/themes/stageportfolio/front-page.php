@@ -2,54 +2,51 @@
 <div class="header">
 	<?php
 
-	$image         = get_field( 'homepage_image' );
-	$picture       = $image['sizes']['large'];
-	$stageimage    = get_field( 'stagefoto' );
-	$getstageimage = $stageimage['sizes']['large'];
-
 	get_header();
 	?>
 </div>
+<body>
+<?php if ( have_rows( 'blocks' ) ): ?>
+	<?php while ( have_rows( 'blocks' ) ):
+		the_row(); ?>
 
-
-<div class="container">
-    <div class="title_homepage">
-        <h1 class="titel">
-			<?php
-			the_field( 'page_title' );
-			?>
-        </h1>
-    </div>
-    <div class="welkomteksten">
-        <p class="welkomtekst">
-			<?php the_field( 'description_stage' );?>
-        </p>
-    </div>
-    <div class="img-home">
-        <img src="<?php echo $picture; ?>" class="img_fluid">
-    </div>
-</div>
-
-<div class="stagecontainer">
-    <div class="stagetitel">
-        <h1 class="titel">
-			<?php
-			the_field( 'stagetitel' );
-			?>
-        </h1>
-
-        <div class="stagetekst">
-            <p class="stageteksten">
-				<?php
-				the_field( 'stagetekst' );
-				?>
-            </p>
+		<?php if ( get_row_layout() == 'home_pagina' ):
+		$title = get_sub_field( 'page_title' );
+		$content = get_sub_field( 'description_stage' );
+		$side = get_sub_field( 'image_position' );
+		$images = get_sub_field( 'image' );
+		$picture = $images['sizes']['large'];
+		?>
+        <div class="container">
+            <div class="row ">
+				<?php if ( $side == 'left' ): ?>
+                    <div class="box-field">
+                        <div class="col-12 col-lg-8 col-md-6">
+                            <img class="img-fluid" src="<?php echo $picture; ?>">
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <h4> <?php echo $title; ?></h4>
+							<?php echo $content; ?>
+                        </div>
+                    </div>
+				<?php else: ?>
+                    <div class="margin-container">
+                        <div class="col-lg-8">
+                            <h4> <?php echo $title; ?></h4>
+							<?php echo $content; ?>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="<?php echo $picture; ?>">
+                        </div>
+                    </div>
+				<?php endif; ?>
+            </div>
         </div>
-        <div class="stagepicture">
-            <img src="<?php echo $getstageimage; ?>" class="img-stage">
-        </div>
-    </div>
-</div>
+
+	<?php endif; ?>
+
+	<?php endwhile; ?>
+<?php endif; ?>
 
 <div id="footer">
 

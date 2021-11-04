@@ -1,60 +1,47 @@
 <?php /* Template Name: Content Stage */ ?>
- <div id="scroll-to-top"></div>
+    <div id="scroll-to-top"></div>
 <?php get_header(); ?>
 
 
-<?php if ( have_rows( 'contentporfolio' ) ): ?>
+<?php if ( have_rows( 'block-pages' ) ): ?>
+	<?php while ( have_rows( 'block-pages' ) ): the_row(); ?>
+		<?php if ( get_row_layout() == 'block-for-page' ): ?>
+			<?php if ( have_rows( 'contentporfolio' ) ): ?>
 
-	<?php while ( have_rows( 'contentporfolio' ) ): the_row();
-		$contenttitle = get_sub_field( 'titlecontent' );
-		$contenttext  = get_sub_field( 'descriptionportfolio' );
-        $imageproject= get_sub_field( 'image_project' );
-        $pictures     = $imageproject ['sizes']['large'];
+				<?php while ( have_rows( 'contentporfolio' ) ): the_row();
+					$contenttitle = get_sub_field( 'titlecontent' );
+					$contenttext  = get_sub_field( 'descriptionportfolio' );
+					$imageproject = get_sub_field( 'image_project' );
+					$pictures     = $imageproject ['sizes']['medium'];
+					$sides        = get_sub_field( 'positie' );
 
-		?>
-
-		<div class="positionh1">
-
-		<h1 class="titlecss"><?php echo $contenttitle ?></h1>
-		</div>
-
-        <div class="content-stage">
-            <p><?php echo $contenttext ?></p>
-        <img src="<?php echo $pictures; ?>" class="img-block">
-        </div>
-       <div class="">
-                  <a class="cta" href="#">
-                    <span>NEXT</span>
-                    <span>
-                      <i class="fas fa-angle-double-right"></i>
-                    </span>
-                  </a>
-                </div>
-
+					?>
+					<?php if ( $sides == 'left' ): ?>
+                        <div class="positionh1">
+                            <h1 class="titlecss"><?php echo $contenttitle ?></h1>
+                        </div>
+                        <div class="container">
+                            <div class="content-stage">
+                                <p><?php echo $contenttext ?></p>
+                                <img src="<?php echo $pictures; ?>" class="img-block">
+                            </div>
+                        </div>
+					<?php else: ?>
+                        <div class="container">
+                            <div class="content-stage">
+                                <p><?php echo $contenttext ?></p>
+                                <img src="<?php echo $pictures; ?>" class="img-block">
+                            </div>
+                        </div>
+                        <div class="positionh1">
+                            <h1 class="titlecss"><?php echo $contenttitle ?></h1>
+                        </div>
+					<?php endif; ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		<?php endif; ?>
 	<?php endwhile; ?>
-
-
 <?php endif; ?>
 
-	<?php if ( have_rows( 'content_field2' ) ): ?>
 
-    	<?php while ( have_rows( 'content_field2' ) ): the_row();
-            $contenttitle2 = get_sub_field( 'titlecontent2' );
-            $contenttexts = get_sub_field( 'descriptionportfolio2' );
-            $imageproject2= get_sub_field( 'image_project2' );
-            $pictures2     = $imageproject2 ['sizes']['large'];
-    		?>
-
-    			<div class="positionh1-2">
-
-            		<h1 class="titlecss"><?php echo $contenttitle2 ?></h1>
-            		</div>
-
-                    <div class="content-stage2">
-                        <p class="text-field"><?php echo $contenttexts ?></p>
-                    <img src="<?php echo $pictures2; ?>" class="img-block">
-                    </div>
-
-<?php endwhile; ?>
-<?php endif; ?>
-<?php get_footer();?>
+<?php get_footer(); ?>
